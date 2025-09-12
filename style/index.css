@@ -1,0 +1,376 @@
+*{
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+    font-family: "Arsenal", sans-serif;
+}
+
+.menu {
+    height: 100px;
+    background-color: #112244;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    padding-right: 25%;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1.3vw;
+}
+
+li :hover {
+    color: #FF7B00;
+    border-bottom: 3px solid #FF7B00;
+    padding-bottom: 20px;
+}
+
+.menu img {
+    height: 50%;
+    margin-left: 12%;
+    margin-right: 7%;
+}
+
+#atual {
+    color: #FF7B00;
+}
+
+.wallpaper {
+    position: relative;
+}
+
+.wallpaper img {
+    width: 100%;
+}
+
+.wallpaper p {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-size: 3vw;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    background: #FF7B00;
+    color: #112244;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #112244;
+    color: #ffffff;
+}
+
+.candidato {
+    display: flex;
+    padding: 0 5em;
+    margin: 3em 0 ;
+}
+
+.candidato img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 18%;
+    margin-top: 3%;
+    margin-left: 12%;
+
+    order:1;
+}
+
+.infos {
+    margin: 3%;
+    margin-right: 15%;
+    order: 2;
+}
+
+.infos h3 {
+    color: #FF7B00;
+}
+
+.infos h1 {
+    color: #112244;
+    font-weight: 700;
+    font-size: 2vw;
+    margin-bottom: 2%;
+}
+
+.infos p {
+    font-size: 1.1vw;
+    color: #112244;
+    line-height: 1.5;
+}
+.section_info_profissional{
+    display: flex;
+    justify-content: center;
+}
+.info_profissional{
+    display: flex;
+    width: 70%;
+}
+.texto_sobre{
+    width: 40%;
+}
+.texto_sobre h3{
+    font-size: 0.9vw;
+    color:#FF7B00;
+}
+.texto_sobre h1{
+    font-size: 1.5vw;
+    color:#112244;
+}
+.texto_sobre p{
+    color: black;
+    font-size: 1vw;
+}
+.texto_sobre a{
+     background: #FF7B00;
+    color: #112244;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.accordeon_section{
+    width: 47%;
+    padding: 0 14%;
+    
+}
+.accordeon{
+    display: flex;
+    flex-direction: column  ;
+    padding: 0.1%;
+    width: 100%;  
+    transition: ease-out; 
+}
+
+.accordeon_title{
+    background-color: #FF7B00;
+    padding: 1em;
+}
+.accordeon_descricao{
+    background-color: #eff1f5;
+    padding: 1em;
+}
+.cards_section{
+    background-color: #112244;
+    margin-top: 5%;
+    padding: 1.7% 0;
+}
+.cards_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.texto_cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.texto_cards h1, .texto_cards p{
+    color: #eff1f5;
+    text-align: center;
+
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 6%;
+    max-width: 60%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    max-width: 27%;
+    padding: 2%;
+    margin: 1%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    gap: 1.2em;
+    transition: 0.2s;
+    font-size: 1vw;
+}
+.card img{
+    width: 10%;
+}
+.titulo_card{
+    font-weight: 600;
+}
+.descricao_card{
+    color: #112244;
+}
+.card:hover{
+    background-color: #ffb039;
+}
+footer{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 3% 0;
+}
+
+.container_redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.redes_sociais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.redes_sociais img{
+    width: 10%;
+    margin: 3.5% 4%;
+}
+@media (max-width: 768px) {
+    .menu img{
+        width: 12%;
+    }
+    .menu a{
+        font-size: 2.3vw;
+    }
+
+    .candidato{
+        flex-direction: column;
+    }
+    .candidato img{
+        margin: 0% 30%;
+        width: 30%;
+        order: 2;
+    }
+    .infos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        order:1
+    }
+    .infos h3{
+        font-size: 3.5vw;
+    }
+    .infos h1{
+        font-size: 2.3vw;
+    }
+    .infos p{
+        font-size: 1.8vw;
+    }
+    .texto_sobre h3{
+        font-size: 3.5vw;
+
+    }
+    .texto_sobre h1{
+        font-size: 2.3vw;
+    }
+    .texto_sobre p{
+        font-size: 1.8vw;
+    }
+    .button_info{
+        font-size: 1.8vw;
+    }
+    .cards{
+        max-width: 100%;
+    }
+    .card{
+        max-width: 30%;
+    }
+    .titulo_card{
+        font-size: 2.7vw;
+    }
+    .descricao_card{
+        font-size: 2vw;
+    }
+
+}
+@media (max-width: 425px) {
+    .menu{
+        height: 3em;
+    }
+    .menu img{
+        width: 5%;
+        height: 20%;
+        margin-left:9%;
+        margin-right: 1%;
+    }
+    .menu a{
+        font-size: 2.5vw;
+    }
+    .button{
+        font-size: 2vw;
+        padding: 1em;
+    }
+    .candidato img{
+        order: 1;
+    }
+    .infos p {
+        font-size: 2.2vw;
+    }
+    .accordeon{
+        margin: 1% 0;
+    }
+    .accordeon_title{
+        font-size: 2.2vw;
+    }
+    .accordeon_descricao{
+        font-size: 2vw;
+    }
+    .texto_sobre h3{
+        font-size: 3.6vw;
+    }
+    .texto_sobre h1{
+        font-size: 3vw;
+    }
+    .texto_sobre p {
+        font-size: 2.5vw;
+    }
+    .titulo_card{
+        font-size: 3vw;
+    }
+    .descricao_card{
+        font-size: 2.5vw;
+    }
+
+    .container_redes h1{
+        font-size: 5vw;
+    }
+    .container_redes p{
+        font-size: 3vw;
+    }
+    .redes_sociais img{
+        width: 8%;
+    }
+    
+}
+
+
