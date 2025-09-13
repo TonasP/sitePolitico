@@ -382,6 +382,13 @@ footer{
         font-size: 4vw;
         padding: 1em;
     }
+    .candidato{
+        align-items: center;
+        justify-content: center;
+        padding: 3em;
+     
+        width: 75%;
+    }
     .candidato img{
         order: 1;
         width: 80%;
@@ -398,6 +405,7 @@ footer{
     }
     .info_profissional{
         flex-direction: column;
+        width: 75%;
 
     }
     .texto_sobre{
