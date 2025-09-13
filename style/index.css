@@ -5,7 +5,12 @@
 	margin-right: 0px;
     font-family: "Arsenal", sans-serif;
 }
-
+input{
+    display: none;
+}
+.hamburguer{
+    display: none;
+}
 .menu {
     height: 100px;
     background-color: #112244;
@@ -39,6 +44,9 @@ li :hover {
     height: 50%;
     margin-left: 12%;
     margin-right: 7%;
+}
+.container{
+    display: none;
 }
 
 #atual {
@@ -261,16 +269,20 @@ footer{
     .menu a{
         font-size: 2.3vw;
     }
-
     .candidato{
         flex-direction: column;
     }
+    .button{
+        font-size: 2.4vw;
+    }
     .candidato img{
+        margin: 0 auto;
         margin: 0% 30%;
-        width: 30%;
+        width: 40%;
         order: 2;
     }
     .infos{
+        margin: 7% auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -278,26 +290,36 @@ footer{
         order:1
     }
     .infos h3{
-        font-size: 3.5vw;
+        font-size: 4.5vw;
     }
     .infos h1{
-        font-size: 2.3vw;
+        font-size: 3.3vw;
     }
     .infos p{
-        font-size: 1.8vw;
+        font-size: 2.8vw;
+    }
+    .info_profissional{
+        margin: auto;
+        padding: auto;
     }
     .texto_sobre h3{
-        font-size: 3.5vw;
+        font-size: 4.5vw;
 
     }
     .texto_sobre h1{
-        font-size: 2.3vw;
+        font-size: 3.3vw;
     }
     .texto_sobre p{
-        font-size: 1.8vw;
+        font-size: 2.8vw;
     }
     .button_info{
-        font-size: 1.8vw;
+        font-size: 2.8vw;
+    }
+    .accordeon_title{
+        font-size: 2.7vw;
+    }
+    .accordeon_descricao{
+        font-size: 2.3vw;
     }
     .cards{
         max-width: 100%;
@@ -306,69 +328,124 @@ footer{
         max-width: 30%;
     }
     .titulo_card{
-        font-size: 2.7vw;
+        font-size: 3.7vw;
     }
     .descricao_card{
-        font-size: 2vw;
+        font-size: 2.7vw;
     }
 
 }
 @media (max-width: 425px) {
+    .hamburguer{
+        display: block;
+        font-size: 9vw ;
+        margin-left: 55%;
+    }
     .menu{
-        height: 3em;
+        position: relative;
+    }    
+    
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        background-color: #112244;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 999;
     }
-    .menu img{
-        width: 5%;
-        height: 20%;
-        margin-left:9%;
-        margin-right: 1%;
+
+    .menu li {
+        padding: 20px 0;
     }
-    .menu a{
-        font-size: 2.5vw;
+
+    .menu a {
+        font-size: 5vw;
+    }
+    #menu_toggle:checked + .hamburguer + ul {
+        display: flex;
+    }
+    .wallpaper img{
+        width:100%;
+        height: 15em;
+    }
+    .wallpaper p{
+        font-size: 7vw;
+    }
+    .wallpaper strong{
+        color: #FF7B00;
+        font-weight: 800;
     }
     .button{
-        font-size: 2vw;
+        font-size: 4vw;
         padding: 1em;
     }
     .candidato img{
         order: 1;
+        width: 80%;
+        margin: auto;
+    }
+    .infos h3{
+        font-size: 6vw;
+    }
+    .infos h1{
+        font-size: 4.5vw;
     }
     .infos p {
-        font-size: 2.2vw;
+        font-size: 5.2vw;
+    }
+    .info_profissional{
+        flex-direction: column;
+
+    }
+    .texto_sobre{
+        width: 100%;
+    }
+    .accordeon_section{ 
+        width: 100%;
+        padding: 0;
+        margin-top: 5% ;
     }
     .accordeon{
         margin: 1% 0;
     }
     .accordeon_title{
-        font-size: 2.2vw;
+        font-size: 4.2vw;
     }
     .accordeon_descricao{
-        font-size: 2vw;
+        font-size: 3vw;
     }
     .texto_sobre h3{
-        font-size: 3.6vw;
+        font-size: 6vw;
     }
     .texto_sobre h1{
-        font-size: 3vw;
+        font-size: 4.5vw;
     }
     .texto_sobre p {
-        font-size: 2.5vw;
+        font-size: 5.2vw;
+    }
+    .card{
+        max-width: 100%;
     }
     .titulo_card{
-        font-size: 3vw;
+        font-size: 6vw;
     }
     .descricao_card{
-        font-size: 2.5vw;
+        font-size: 4.5vw;
     }
-
     .container_redes h1{
-        font-size: 5vw;
+        font-size: 6vw;
     }
-    .container_redes p{
-        font-size: 3vw;
+    .att{
+        font-size: 4.5vw;
     }
     .redes_sociais img{
-        width: 8%;
+        width: 10%;
+    }
+    .copyright{
+        font-size: 3vw;
     }
     
 }
