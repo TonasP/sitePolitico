@@ -1,11 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
-    <p>Notícias</p>
+    <header class="menu">
+    <img src="assets/logo.svg" alt="Logo do Partido dos Ticudos" />
+
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="hamburger">☰</label>
+
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="biografia.html" >Biografia</a></li>
+      <li><a href="noticias.html" id="atual">Notícias</a></li>
+      <li><a href="midias.html">Mídias</a></li>
+    </ul>
+  </header>
+   <section class="noticias">
+    <div class="container_noticias">
+
+        <div class="noticia_grande noticia">
+            <figure>
+                <img src="assets/ticudao-protesto.jpg" alt="Imagem de Ticudão em cima de um trio elétrico">
+            </figure>
+            <div class="texto">
+                <h3>Ticudão Lidera Protesto por Mais Transparência e Calças Slim no Congresso</h3>
+                <p>Milhares tomaram as ruas da capital em apoio ao candidato do PDT, exigindo “postura firme e moral elevada” no Parlamento. O movimento, chamado de Marcha da Virilidade, foi pacífico e terminou com um grande churrasco popular.</p>
+                <a href="index.html" target="_blank"><strong>Ler mais </strong></a>
+            </div>
+        </div>
+
+        <div class="noticia_media noticia">
+            <figure>
+                <img src="assets/ticudao-esporte.jpg" alt="Imagem de Ticudão levantando um troféu em formato de cinturão">
+            </figure>
+            <div class="texto">
+                <h3>Ticudão vence Torneio Nacional de Debate no Grito</h3>
+                <p>Com voz potente e argumentos duros, Ticudão derrotou todos os adversários políticos em um torneio de debates realizado no Centro de Convenções de Quebrada City. O júri destacou sua “verve musculosa e raciocínio afiado”.</p>
+                <a href="index.html" target="_blank"><strong>Ler mais </strong></a>
+            </div>
+        </div>
+
+        <div class="noticia_pequena noticia_pequena_meio noticia">
+            <figure>
+                <img src="assets/ticudao-chuva.jpg" alt="Imagem de Ticudão ajudando moradores na enchente">
+                <figcaption class="texto_fig">Mesmo debaixo d'água, Ticudão aparece para ajudar e impressionar.</figcaption>
+            </figure>
+            <div class="texto_pequeno">
+                <h3>Enchente Revela a “Força Moral” de Ticudão nas Ruas</h3>
+            </div>
+            <div class="lermais">
+                <a href="index.html" target="_blank"><strong>Ler mais </strong></a>
+            </div>
+        </div>
+
+        <div class="noticia_pequena noticia">
+            <figure>
+                <img src="assets/ticudao-ciencia.jpg" alt="Imagem de Ticudão com jaleco em laboratório">
+                <figcaption class="texto_fig">PDT anuncia plano científico baseado em “dados de presença política”.</figcaption>
+            </figure>
+            <div class="texto_pequeno">
+                <h3>PDT Lança Instituto de Ciência Política Viril com Apoio de Ticudão</h3>
+                <a href="index.html" target="_blank"><strong>Ler mais </strong></a>
+            </div>
+        </div>
+
+        <div class="noticia_pequena noticia">
+            <figure>
+                <img src="assets/ticudao-escola.jpg" alt="Ticudão em visita à escola pública">
+                <figcaption class="texto_fig">Nova cartilha escolar do PDT ensina "ética, firmeza e musculação cívica".</figcaption>
+            </figure>
+            <div class="texto_pequeno">
+                <h3>Reforma Educacional Propõe Aula de Retórica e Postura Política</h3>
+                <a href="index.html" target="_blank"><strong>Ler mais </strong></a>
+            </div>
+        </div>
+
+        <div class="noticia_pequena noticia">
+            <figure>
+                <img src="assets/ticudao-parque.jpg" alt="Imagem de Ticudão em inauguração de parque">
+                <figcaption class="texto_fig">“Parque da Moral Erguida” é inaugurado com presença do candidato.</figcaption>
+            </figure>
+            <div class="texto_pequeno">
+                <h3>Ticudão Inaugura Espaço Público Inspirado em Valores do PDT</h3>
+                <a href="index.html" target="_blank"><strong>Ler mais </strong></a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <footer>
+        <div class="container_redes">
+            <h1>Me acompanhe nas redes sociais</h1>
+            <p class="att">Receba atualizações e novidades em tempo real</p>
+            <div class="redes_sociais">
+                <img src="assets/face.png" alt="">
+                <img src="assets/insta.png" alt="">
+                <img src="assets/twitter.png" alt="">
+                <img src="assets/drive.png" alt="">
+                <img src="assets/youtube.png" alt="">
+            </div>
+            <p class="copyright">© Copyright 2025 Nome do Candidato. Todos os direitos reservados. </p>
+        </div>
+    </footer>
+
 </body>
+
 </html>

@@ -41,7 +41,7 @@ li :hover {
 }
 
 .menu img {
-    height: 50%;
+    width:15% ;
     margin-left: 12%;
     margin-right: 7%;
 }
@@ -262,9 +262,15 @@ footer{
     width: 10%;
     margin: 3.5% 4%;
 }
+@media (max-width: 1030px) {
+    .menu img{
+        width: 15%;
+    }
+}
 @media (max-width: 768px) {
     .menu img{
-        width: 12%;
+        width: 20%;
+        margin-left: 10%;
     }
     .menu a{
         font-size: 2.3vw;
@@ -393,6 +399,9 @@ footer{
         order: 1;
         width: 80%;
         margin: auto;
+    }
+    .candidato h1{
+        font-size: 2vw;
     }
     .infos h3{
         font-size: 6vw;

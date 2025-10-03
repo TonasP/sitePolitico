@@ -1,0 +1,15 @@
+<svg width="300" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Letra T estilizada como símbolo -->
+  <g transform="translate(20, 20)">
+    <rect x="0" y="0" width="60" height="20" fill="#0057B8" />
+    <rect x="20" y="0" width="20" height="60" fill="#FF6A00" />
+  </g>
+
+  <!-- Nome do partido -->
+  <text x="100" y="60" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#0057B8">
+    Partido Dos
+  </text>
+  <text x="100" y="90" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FF6A00">
+    Ticudos (PDT)
+  </text>
+</svg>

@@ -1,0 +1,293 @@
+
+input{
+    display: none;
+}
+label{
+    display: none;
+}
+.candidato {
+    display: flex;
+}
+
+.foto {
+    width: 35%;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.foto img {
+    width: 80%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.infos {
+    width: 65%;
+    margin-right: 10%;
+    margin-top: 3%;
+}
+
+.conteudo p {
+    font-size: 1.2vw;
+}
+
+.ancoras {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.ancoras a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2vw;
+    padding: 8px 16px;
+    background-color: #112244;
+    border-radius: 8px;
+
+}
+
+.ancoras a:hover {
+    background-color: #FF7B00;
+    color: #000000;
+    transition: 0.5s;
+}
+.dados-gerais ul{
+    display: flex;
+    flex-direction: column;
+    list-style: inside;
+}
+.dados-gerais li {
+    font-size: 1.2vw;
+}
+
+.candidato h2 {
+    color: #FF7B00;
+}
+
+.candidato h1 {
+    color: #112244;
+    font-weight: 700;
+    font-size: 2vw;
+    margin-bottom: 2%;
+}
+
+.dados-gerais {
+    padding-bottom: 3%;
+}
+
+/* sessão trajeória */
+  .trajetoria-politica {
+    background-color: #112244;
+    padding-bottom: 1%;
+    padding-top: 3%;
+  }
+
+  .trajetoria-politica h2 {
+    color: #FF7B00;
+    margin-left: 10%;
+  }
+
+  .trajetoria-politica p {
+    color: #ffffff;
+    font-size: 1.2vw;
+    margin-left: 10%;
+    width: 80%;
+    line-height: 1.8;
+
+  }
+
+/* sessão propostas */
+.propostas{
+    background-color: #112244;
+    padding-bottom: 3%;
+    padding-top: 3%;
+  }
+
+
+.propostas h2 {
+    color: #FF7B00;
+    margin-left: 10%;
+}
+
+.propostas h3 {
+    color: #ffffff;
+    margin-left: 10%;
+    padding-top: 1.5%;
+}
+
+.propostas p {
+color: #ffffff;
+font-size: 1.2vw;
+margin-top: 1%;
+margin-left: 10%;
+padding-bottom: 2.5%;
+width: 80%;
+}
+.valores ul{
+    display: flex;
+    flex-direction: column;
+    list-style: inside;
+}
+
+/* sessão contato */
+.contato {
+    background-color: #112244;
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+}
+
+#endereco {
+    margin-left: 10%;
+}
+
+#endereco h2{
+    margin-bottom: 1%;
+}
+
+  iframe {
+    margin-left: 10%;
+    margin-top: 2%;
+    border: 3px solid white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px #ffffff;
+  }
+
+  .contato h2 {
+    color: #FF7B00;
+    margin-left: 10%;
+  }
+
+  .contato p {
+    color: #ffffff;
+    font-size: 1.2vw;
+    line-height: 1.8;
+    margin-left: 10%    ;
+
+  }
+
+  /* sessão feitos e valores */
+  .feitos h2, .valores h2 {
+    color: #FF7B00;
+    margin-left: 10%;
+    margin-top: 3%;
+  }
+
+  .valores ul{
+    padding-bottom: 3%;
+  }
+
+  .valores p, .valores ul {
+    margin-left: 10%;
+    font-size: 1.2vw;
+    line-height: 1.8;
+
+  }
+
+  .feitos ol {
+    margin-left: 10%;
+    font-size: 1.2vw;
+    line-height: 1.8;
+  }
+
+
+.container_redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.redes_sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes_sociais img {
+    width: 10%;
+    margin: 3.5% 4%;
+    transition: .2s;
+}
+
+.redes_sociais img:hover {
+    -webkit-transform: scale(1.3) translate(0px, -14px);
+    -moz-transform: scale(1.3) translate(0px, -14px);
+    -ms-transform: scale(1.3) translate(0px, -14px);
+    -o-transform: scale(1.3) translate(0px, -14px);
+    transform: scale(1.3) translate(0px, -14px);
+}
+
+
+
+@media (max-width: 1024px) {
+    .menu {
+        height: 75px;
+    }
+
+    .menu a {
+        font-size: 1.8vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        height: 75px;
+    }
+
+    .menu a {
+        font-size: 1.8vw;
+    }
+
+    .footer_redes_sociais {
+        gap: 3%;
+    }
+
+    .footer_redes_sociais img {
+        width: 2%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .footer_social h3 {
+        color: #112244;
+        padding-top: 2%;
+    }
+
+    .footer_social p {
+        color: #112244;
+    }
+}
+
+@media (max-width: 425px) {
+    .hamburger {
+        display: block;
+    }
+
+    .menu {
+        position: relative;
+    }
+
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        background-color: #112244;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu li {
+        padding: 20px 0;
+    }
+
+    .menu a {
+        font-size: 5vw;
+    }
+
+    #menu-toggle:checked + .hamburger + ul {
+        display: flex;
+    }
+}
